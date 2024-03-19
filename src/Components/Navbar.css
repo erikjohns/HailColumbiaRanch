@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'OstrichSans-Black';
+    src: local('OstrichSans-Black'), url('../Fonts/ostrich-black.woff') format('woff');
+    font-weight: normal;
+  }
+
+.main-navbar {
+    text-align: center;
+    font-family: 'OstrichSans-Black', sans-serif;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+}
+
+.main-navbar-container {
+    margin: 50px 0;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #F2F2F0;
+}
+
+.main-navbar-container a {
+    flex: 1;
+}
+
+.main-navbar-container .main-navbar-logo {
+    flex: 1;
+}
+
+.main-navbar-logo {
+    font-weight: 900;
+    font-size: 50px;
+    color: #F2F2F0;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar-hover-underline {
+    font-size: 24px;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar-hover-underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #F2F2F0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.main-navbar-hover-underline:hover:after {
+    transform: ScaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Extra Small Devices - Phones */
+@media (max-width: 992px) {
+
+    /* Navigation */
+
+    .main-navbar-mobile {
+        text-align: center;
+        font-family: 'OstrichSans-Black', sans-serif;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        z-index: 3;
+    }
+
+    .main-navbar-container-mobile {
+        margin: 20px 40px;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        flex-grow: 1;
+    }
+
+    .main-navbar-logo-mobile {
+        font-weight: 900;
+        font-size: 45px;
+        color: #F2F2F0;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-family: "OstrichSans-Black", sans-serif;
+    }
+
+    .main-navbar-menu-icon {
+        color: #F2F2F0;
+        transform: scale(1.2);
+    }
+
+    .main-navbar-links-container-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+/* Large Devices - Desktops */
+@media (min-width: 993px) and (max-width: 1200px) {
+
+}
+
+/* Extra Large Devices - Large Desktops */
+@media (min-width: 1201px) {
+
+}

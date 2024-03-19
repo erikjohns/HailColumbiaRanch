@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #28282B;
+}
+
+.homepage {
+    width: 100%;
+    background: 28282B;
+}
+
+/* Hero */
+
+.hero-image-photo {
+    position: relative;
+}
+
+.hero-image-photo img {
+    width: 100%;
+    height: 90vw;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-image-overlay {
+    background: rgba(39, 36, 29, 0.40);
+    width: 100%;
+    height: 90vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2; 
+}
+
+.hero-text {
+    position: absolute;
+    z-index: 5;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-text h1 {
+    color: #F2F2F0;
+    text-align: center;
+    font-family: 'OstrichSans-Black', sans-serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.hero-text h4 {
+    color: #F2F2F0;
+    text-align: center;
+    font-family: 'OstrichSans-Black', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-image-gradient {
+    background: linear-gradient(180deg, rgba(11, 29, 38, 0.00) 0%, #28282B 61.38%);
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    height: 40%;
+    width: 100%;
+}
+
+
+
+
+/* Discover Section */
+
+.discover-section {
+    display: flex;
+    align-items: center;
+    margin: 0 7%;
+    justify-content: space-between;
+    z-index: 15;
+    position: relative;
+    margin-bottom: 250px;
+    margin-top: -500px;
+}
+
+.discover-section-text {
+    width: 40%;
+}
+
+.discover-section-image {
+    width: 50%;
+    height: 1100px;
+    background: url("../Assets/Images/McGrath-5.jpg");
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 5%;
+}
+
+.discover-section-text h1 {
+    color: #F2F2F0;
+    opacity: 0.2;
+    font-family: "OstrichSans-Black", sans-serif;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 50px;
+    margin-bottom: 0;
+}
+
+.discover-section-text h4 {
+    color: #F2F2F0;
+    font-family: "OstrichSans-Black", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 55px;
+    margin-left: 40px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.discover-section-text p {
+    font-family: 'Montserrat', sans-serif;
+    color: #F2F2F0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-left: 40px;
+}
+
+
+
+/* Venue Section */
+
+.venue-section {
+    display: flex;
+    align-items: center;
+    margin: 0 7%;
+    justify-content: space-between;
+    z-index: 15;
+    position: relative;
+    margin-bottom: 250px;
+}
+
+.venue-section-text {
+    width: 40%;
+}
+
+.venue-section-image {
+    width: 50%;
+    height: 1100px;
+    background: url("../Assets/Images/McGrath-7.jpg");
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 5%;
+}
+
+.venue-section-text h1 {
+    color: #F2F2F0;
+    opacity: 0.2;
+    font-family: "OstrichSans-Black", sans-serif;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 50px;
+    margin-bottom: 0;
+}
+
+.venue-section-text h4 {
+    color: #F2F2F0;
+    font-family: "OstrichSans-Black", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 55px;
+    margin-left: 40px;
+    margin-top: 0;
+}
+
+.venue-section-text p {
+    font-family: 'Montserrat', sans-serif;
+    color: #F2F2F0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-left: 40px;
+}
+
+.venue-section-button {
+    margin-top: 60px;
+}
+
+.venue-section-button a {
+    color: #F2F2F0;
+    font-family: "OstrichSans-Black", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 24px;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.venue-section-hover-underline {
+    font-size: 24px;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.venue-section-hover-underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #F2F2F0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.venue-section-hover-underline:hover:after {
+    transform: ScaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+/* Lodge Section */
+
+.lodge-section {
+    display: flex;
+    align-items: center;
+    margin: 0 7%;
+    justify-content: space-between;
+    z-index: 15;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.lodge-section-text {
+    width: 40%;
+}
+
+.lodge-section-image {
+    width: 50%;
+    height: 1100px;
+    background: url("../Assets/Images/McGrath-18.jpg");
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 5%;
+}
+
+.lodge-section-text h1 {
+    color: #F2F2F0;
+    opacity: 0.2;
+    font-family: "OstrichSans-Black", sans-serif;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 50px;
+    margin-bottom: 0;
+}
+
+.lodge-section-text h4 {
+    color: #F2F2F0;
+    font-family: "OstrichSans-Black", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 55px;
+    margin-left: 40px;
+    margin-top: 0;
+}
+
+.lodge-section-text p {
+    font-family: 'Montserrat', sans-serif;
+    color: #F2F2F0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-left: 40px;
+}
+
+.lodge-section-button {
+    margin-top: 60px;
+}
+
+.lodge-section-button a {
+    color: #F2F2F0;
+    font-family: "OstrichSans-Black", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 24px;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.lodge-section-hover-underline {
+    font-size: 24px;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.lodge-section-hover-underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #F2F2F0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.lodge-section-hover-underline:hover:after {
+    transform: ScaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Extra Small Devices - Phones */
+@media (max-width: 576px) {
+    .hero-image-photo img {
+        height: 130vh;
+    }
+
+    .hero-image-overlay {
+        height: 120vh;
+    }
+
+    .discover-section {
+        margin-top: -270px;
+        flex-direction: column;
+        margin-bottom: 75px;
+    }
+
+    .discover-section-text {
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .discover-section h1 {
+        font-size: 90px;
+    }
+
+    .discover-section h4 {
+        margin-top: -10px;
+        margin-left: 0;
+    }
+
+    .discover-section p {
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+
+    .discover-section-image {
+        width: 100%;
+    }
+
+    .venue-section {
+        margin-top: 200px;
+        flex-direction: column;
+        margin-bottom: 75px;
+    }
+
+    .venue-section-text {
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .venue-section h1 {
+        font-size: 90px;
+    }
+
+    .venue-section h4 {
+        margin-top: -10px;
+        margin-left: 0;
+    }
+
+    .venue-section p {
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+
+    .venue-section-image {
+        width: 100%;
+        order: 2;
+    }
+
+    .venue-section-button {
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .lodge-section {
+        margin-top: 200px;
+        flex-direction: column;
+        margin-bottom: 75px;
+    }
+
+    .lodge-section-text {
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .lodge-section h1 {
+        font-size: 90px;
+    }
+
+    .lodge-section h4 {
+        margin-top: -10px;
+        margin-left: 0;
+    }
+
+    .lodge-section p {
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+
+    .lodge-section-image {
+        width: 100%;
+    }
+
+    .lodge-section-button {
+        margin: auto;
+        margin-bottom: 50px;
+    }
+}
+
+/* Small Devices - Tablets */
+@media (min-width: 577px) and (max-width: 768px) {
+
+}
+
+/* Medium Devices - Laptops and Small Desktops */
+@media (min-width: 769px) and (max-width: 992px) {
+
+}
+
+/* Large Devices - Desktops */
+@media (min-width: 993px) and (max-width: 1200px) {
+
+}
+
+/* Extra Large Devices - Large Desktops */
+@media (min-width: 1201px) {
+
+}

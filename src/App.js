@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Homepage from './Pages/Homepage';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import VenuePage from './Pages/Venue';
+import LodgePage from './Pages/Lodge';
+import { AnimatePresence } from 'framer-motion';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Router>
+        <AnimatePresence mode="wait">
+          <Routes>
+            <Route index element={<Homepage />} />
+            <Route path="/venue" element={<VenuePage />} />
+            <Route path="/lodge" element={<LodgePage />} />
+          </Routes>
+        </AnimatePresence>
+      </Router>
     </div>
   );
 }
