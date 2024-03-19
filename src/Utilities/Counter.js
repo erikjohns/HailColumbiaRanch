@@ -17,7 +17,7 @@ const Counter = ({ inputNum }) => {
         };
 
         updateNum();
-    }, inputNum);
+    }, [inputNum, displayedValue]);
 
     return <span>{displayedValue}</span>
 }

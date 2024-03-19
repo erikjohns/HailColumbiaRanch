@@ -5,8 +5,6 @@ import Counter from "../Utilities/Counter";
 
 const SplashScreen = () => {
     const [isVisible, setIsVisible] = useState(true);
-    const [displayedLatitude, setDisplayedLatitude] = useState(0);
-    const [displayedLongitude, setDisplayedLongitude] = useState(0);
 
     useEffect(() => {
         const timer = setTimeout(() => {

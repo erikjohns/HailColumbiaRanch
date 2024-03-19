@@ -2,7 +2,6 @@ import Navbar from "../Components/Navbar";
 import "./Homepage.css";
 import Footer from "../Components/Footer";
 import HeroImage from "../Assets/Images/McGrath.jpg"
-import SplashScreen from "../Components/SplashScreen";
 
 function Homepage () {
     return (
@@ -13,7 +12,7 @@ function Homepage () {
                     <h4>Wedding & Event Venue</h4>
                     <h1>Hail Columbia Ranch</h1>
                 </div>
-                <img src={HeroImage} />
+                <img src={HeroImage} alt="Hero"/>
                 <div className="hero-image-overlay"></div>
                 <div className="hero-image-gradient"></div>
             </div>
@@ -52,7 +51,7 @@ function Homepage () {
                             natural beauty.
                         </p>
                         <div className="venue-section-button">
-                            <a href="#" className="venue-section-hover-underline">Learn More</a>
+                            <a href="/" className="venue-section-hover-underline">Learn More</a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16" fill="none">
                                 <g clip-path="url(#clip0_65_28)">
                                     <path d="M16 0L14.59 1.41L20.17 7H0L8.7422e-08 9H20.17L14.58 14.58L16 16L24 8L16 0Z" fill="white"/>
@@ -79,7 +78,7 @@ function Homepage () {
                             creating an enchanting experience for your getaway or special event.
                         </p>
                         <div className="lodge-section-button">
-                            <a href="#" className="lodge-section-hover-underline">Learn More</a>
+                            <a href="/" className="lodge-section-hover-underline">Learn More</a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16" fill="none">
                                 <g clip-path="url(#clip0_65_28)">
                                     <path d="M16 0L14.59 1.41L20.17 7H0L8.7422e-08 9H20.17L14.58 14.58L16 16L24 8L16 0Z" fill="white"/>

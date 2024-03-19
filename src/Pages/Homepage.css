@@ -366,6 +366,10 @@ body {
         text-align: center;
     }
 
+    .discover-section-image {
+        height: 70vh;
+    }
+
     .discover-section h1 {
         font-size: 90px;
     }
@@ -394,6 +398,10 @@ body {
         width: 100%;
         overflow: hidden;
         text-align: center;
+    }
+
+    .venue-section-image {
+        height: 70vh;
     }
 
     .venue-section h1 {
@@ -430,6 +438,10 @@ body {
         width: 100%;
         overflow: hidden;
         text-align: center;
+    }
+
+    .lodge-section-image {
+        height: 70vh;
     }
 
     .lodge-section h1 {
