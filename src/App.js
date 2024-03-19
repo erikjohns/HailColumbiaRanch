@@ -4,11 +4,13 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import VenuePage from './Pages/Venue';
 import LodgePage from './Pages/Lodge';
 import { AnimatePresence } from 'framer-motion';
+import SplashScreen from './Components/SplashScreen';
 
 function App() {
 
   return (
     <div className="app">
+      <SplashScreen />
       <Router>
         <AnimatePresence mode="wait">
           <Routes>

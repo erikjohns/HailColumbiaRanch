@@ -2,6 +2,7 @@ import Navbar from "../Components/Navbar";
 import "./Homepage.css";
 import Footer from "../Components/Footer";
 import HeroImage from "../Assets/Images/McGrath.jpg"
+import SplashScreen from "../Components/SplashScreen";
 
 function Homepage () {
     return (
