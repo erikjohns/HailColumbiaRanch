@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import "./SplashScreen.css";
 import { useEffect, useState } from "react";
-import Counter from "./Counter";
+import Counter from "../Utilities/Counter";
 
 const SplashScreen = () => {
     const [isVisible, setIsVisible] = useState(true);
