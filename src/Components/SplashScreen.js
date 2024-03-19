@@ -1,26 +1,26 @@
 import { motion } from "framer-motion";
 import "./SplashScreen.css";
 import { useEffect, useState } from "react";
+import Counter from "./Counter";
 
 const SplashScreen = () => {
     const [isVisible, setIsVisible] = useState(true);
+    const [displayedLatitude, setDisplayedLatitude] = useState(0);
+    const [displayedLongitude, setDisplayedLongitude] = useState(0);
 
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsVisible(false);
-        }, 2000);
+        }, 3000);
 
         return () => clearTimeout(timer);
     }, []);
 
     useEffect(() => {
-        // Disable scrolling when the splash screen is visible
-        if (isVisible) {
-          document.body.style.overflow = 'hidden';
-        } else {
-          document.body.style.overflow = 'unset';
-        }
-      }, [isVisible]);
+        document.body.style.overflow = isVisible ? 'hidden' : 'unset';
+    }, [isVisible]);
+
+    
 
     return (
         <motion.div
@@ -29,7 +29,24 @@ const SplashScreen = () => {
             animate={{ y: isVisible ? 0 : '-100vh' }}
             transition={{ duration: 0.5 }}
         >
-            <h1>HCR</h1>
+            <motion.p>
+                <Counter inputNum="123.4" />&deg;
+            </motion.p>
+            <div>
+                {['H', 'C', 'R'].map((letter, index) => (
+                    <motion.h1
+                        key={index}
+                        initial={{ y: 0, opacity: 1 }}
+                        animate={{ y: -200, opacity: 0 }}
+                        transition={{ duration: 0.5, delay: 2.3 + index * 0.1 }}
+                    >
+                        {letter}
+                    </motion.h1>
+                ))}
+            </div>
+            <motion.p>
+                123.4&deg;
+            </motion.p>
         </motion.div>
     )
 }

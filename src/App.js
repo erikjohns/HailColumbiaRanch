@@ -10,8 +10,8 @@ function App() {
 
   return (
     <div className="app">
-      <SplashScreen />
       <Router>
+        <SplashScreen />
         <AnimatePresence mode="wait">
           <Routes>
             <Route index element={<Homepage />} />

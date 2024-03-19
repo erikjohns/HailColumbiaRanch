@@ -11,9 +11,23 @@
     justify-content: center;
 }
 
-.splash-screen-container h1 {
+.splash-screen-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 500px;
+}
+
+.splash-screen-container div h1 {
     color: white;
     font-size: 100px;
     font-family: 'OstrichSans-Black', sans-serif;
     font-weight: 900;
+}
+
+.splash-screen-container p {
+    color: white;
+    font-size: 32px;
+    font-family: 'OstrichSans-Black', sans-serif;
+    font-weight: 300;
 }
