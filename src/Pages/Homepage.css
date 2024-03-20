@@ -156,6 +156,7 @@ body {
 
 .venue-section-text {
     width: 40%;
+    order: 2;
 }
 
 .venue-section-image {
@@ -165,6 +166,7 @@ body {
     background-size: cover;
     background-position: 50%;
     border-radius: 5%;
+    order: 1;
 }
 
 .venue-section-text h1 {
