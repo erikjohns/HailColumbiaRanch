@@ -7,7 +7,8 @@ const Counter = ({ inputNum }) => {
         const updateNum = () => {
             const numInterval = setInterval(() => {
                 if (displayedValue < inputNum) {
-                    setDisplayedValue(prevValue => prevValue + 0.1);
+                    const roundedValue = parseFloat((displayedValue + 0.1).toFixed(1));
+                    setDisplayedValue(roundedValue);
                 } else {
                     clearInterval(numInterval);
                 }

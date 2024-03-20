@@ -4,14 +4,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import VenuePage from './Pages/Venue';
 import LodgePage from './Pages/Lodge';
 import { AnimatePresence } from 'framer-motion';
-import SplashScreen from './Components/SplashScreen';
 
 function App() {
 
   return (
     <div className="app">
       <Router>
-        <SplashScreen />
         <AnimatePresence mode="wait">
           <Routes>
             <Route index element={<Homepage />} />

@@ -2,39 +2,65 @@ import Navbar from "../Components/Navbar";
 import "./Homepage.css";
 import Footer from "../Components/Footer";
 import HeroImage from "../Assets/Images/McGrath.jpg"
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function Homepage () {
+
+    const { ref, entry, inView } = useInView()
+    const animationControl = useAnimation();
+
+    if (inView) {
+        animationControl.start({
+            x: 0,
+            opacity: 1,
+            transition: {
+                delay: 1,
+                duration: 5
+            }
+        })
+    }
+
     return (
         <div className="homepage">
             <div className="hero-image-photo">
                 <Navbar />
-                <div className="hero-text">
+                <motion.div 
+                    className="hero-text"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 5 }}
+                >    
                     <h4>Wedding & Event Venue</h4>
                     <h1>Hail Columbia Ranch</h1>
-                </div>
+                </motion.div>
                 <img src={HeroImage} alt="Hero"/>
                 <div className="hero-image-overlay"></div>
                 <div className="hero-image-gradient"></div>
             </div>
-            <div className="discover-section">
-                    <div className="discover-section-text">
-                        <h1>Discover</h1>
-                        <h4>Hail Columbia Ranch: Where Love & Nature Unite</h4>
-                        <p>
-                            Welcome to Hail Columbia Ranch, a picturesque wedding and event venue in Butte, 
-                            Montana. Our charming barn, surrounded by Montana's natural beauty, 
-                            sets the stage for your special day. Explore rustic elegance where romance 
-                            meets rugged allure. Extend your experience by staying at 'The Lodge,' 
-                            our cozy cabin-style house in Hail Columbia Gulch. It's more than accommodation; 
-                            it's an immersive retreat, blending rustic charm with modern comfort. 
-                            Your dream event begins at Hail Columbia Ranch – where love and nature unite in 
-                            perfect harmony, and every moment is a cherished memory.
-                        </p>
-                    </div>
-                    <div className="discover-section-image">
-                        
-                    </div>
+            <div className="discover-section" ref={ref}>
+                <motion.div
+                    className="discover-section-text"
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={animationControl}
+                    transition={{ duration: 0.5 }}
+                >
+                    <h1>Discover</h1>
+                    <h4>Hail Columbia Ranch: Where Love & Nature Unite</h4>
+                    <p>
+                        Welcome to Hail Columbia Ranch, a picturesque wedding and event venue in Butte, 
+                        Montana. Our charming barn, surrounded by Montana's natural beauty, 
+                        sets the stage for your special day. Explore rustic elegance where romance 
+                        meets rugged allure. Extend your experience by staying at 'The Lodge,' 
+                        our cozy cabin-style house in Hail Columbia Gulch. It's more than accommodation; 
+                        it's an immersive retreat, blending rustic charm with modern comfort. 
+                        Your dream event begins at Hail Columbia Ranch – where love and nature unite in 
+                        perfect harmony, and every moment is a cherished memory.
+                    </p>
+                </motion.div>
+                <div className="discover-section-image"> 
                 </div>
+            </div>
 
 
                 <div className="venue-section">
