@@ -45,24 +45,48 @@ const sections = [
     },
 ];
 
-
 function Homepage () {
 
-    const { ref, inView } = useInView()
     const animationControl = useAnimation();
+    const animationControl2 = useAnimation();
+    const animationControl3 = useAnimation();
+
+    const { ref: ref1, inView: inView1 } = useInView();
+    const { ref: ref2, inView: inView2 } = useInView();
+    const { ref: ref3, inView: inView3 } = useInView();
 
     useEffect(() => {
-        if (inView) {
+        if (inView1) {
             animationControl.start({
                 x: 0,
                 opacity: 1,
                 transition: {
-                    delay: 1,
-                    duration: 5
+                    delay: 0.5,
+                    duration: 2
                 }
             })
         }
-    }, [inView, animationControl])
+        if (inView2) {
+            animationControl2.start({
+                x: 0,
+                opacity: 1,
+                transition: {
+                    delay: 0.5,
+                    duration: 2
+                }
+            })
+        }
+        if (inView3) {
+            animationControl3.start({
+                x: 0,
+                opacity: 1,
+                transition: {
+                    delay: 0.5,
+                    duration: 2
+                }
+            })
+        }
+    }, [inView1, inView2, inView3, animationControl, animationControl2, animationControl3]);
 
     return (
         <div className="homepage">
@@ -83,11 +107,11 @@ function Homepage () {
             </div>
 
             {sections.map((section, index) => (
-                <div key={index} className={section.className} ref={ref}>
+                <div key={index} className={section.className} ref={index === 0 ? ref1 : index === 1 ? ref2 : ref3}>
                     <motion.div
                         className={`${section.className}-text`}
                         initial={{ opacity: 0, x: -50 }}
-                        animate={animationControl}
+                        animate={index === 0 ? animationControl : index === 1 ? animationControl2 : animationControl3}
                         transition={{ duration: 0.5 }}
                     >
                         <h1>{section.title}</h1>
