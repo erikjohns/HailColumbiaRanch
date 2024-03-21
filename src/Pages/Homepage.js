@@ -1,10 +1,10 @@
-import Navbar from "../Components/Navbar";
 import "./Homepage.css";
 import Footer from "../Components/Footer";
 import HeroImage from "../Assets/Images/McGrath.jpg"
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import HeroSection from "../Components/Hero";
 
 const sections = [
     {
@@ -90,21 +90,11 @@ function Homepage () {
 
     return (
         <div className="homepage">
-            <div className="hero-image-photo">
-                <Navbar />
-                <motion.div 
-                    className="hero-text"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 5 }}
-                >    
-                    <h4>Wedding & Event Venue</h4>
-                    <h1>Hail Columbia Ranch</h1>
-                </motion.div>
-                <img src={HeroImage} alt="Hero"/>
-                <div className="hero-image-overlay"></div>
-                <div className="hero-image-gradient"></div>
-            </div>
+            <HeroSection
+                title="Hail Columbia Ranch"
+                subtitle="Wedding & Event Venue"
+                image={HeroImage}
+            />
 
             {sections.map((section, index) => (
                 <div key={index} className={section.className} ref={index === 0 ? ref1 : index === 1 ? ref2 : ref3}>
