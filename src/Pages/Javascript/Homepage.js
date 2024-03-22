@@ -1,10 +1,10 @@
-import "./Homepage.css";
-import Footer from "../Components/Footer";
-import HeroImage from "../Assets/Images/McGrath.jpg"
+import "../Styling/Homepage.css";
+import Footer from "../../Components/Footer";
+import HeroImage from "../../Assets/Images/McGrath.jpg"
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import HeroSection from "../Components/Hero";
+import HeroSection from "../../Components/Hero";
 
 const sections = [
     {

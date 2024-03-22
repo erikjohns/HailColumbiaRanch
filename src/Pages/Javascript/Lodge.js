@@ -1,7 +1,7 @@
-import LodgeHeroImage from "../Assets/Images/McGrath-17.jpg"
-import HeroSection from "../Components/Hero";
-import ImageSlider from "../Components/ImageSlider";
-import "./Lodge.css";
+import LodgeHeroImage from "../../Assets/Images/McGrath-17.jpg"
+import HeroSection from "../../Components/Hero";
+import ImageSlider from "../../Components/ImageSlider";
+import "../Styling/Lodge.css";
 
 function LodgePage () {
     return (

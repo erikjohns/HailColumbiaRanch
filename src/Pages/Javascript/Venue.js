@@ -1,6 +1,6 @@
-import "./Venue.css";
-import VenueHeroImage from "../Assets/Images/McGrath-69.jpg";
-import HeroSection from "../Components/Hero";
+import "../Styling/Venue.css";
+import VenueHeroImage from "../../Assets/Images/McGrath-69.jpg";
+import HeroSection from "../../Components/Hero";
 
 function VenuePage () {
     return (

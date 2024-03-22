@@ -101,7 +101,7 @@ body {
 .discover-section-image {
     width: 50%;
     height: 1100px;
-    background: url("../Assets/Images/McGrath-5.jpg");
+    background: url("../../Assets/Images/McGrath-5.jpg");
     background-size: cover;
     background-position: 50%;
     border-radius: 5%;
@@ -162,7 +162,7 @@ body {
 .venue-section-image {
     width: 50%;
     height: 1100px;
-    background: url("../Assets/Images/McGrath-7.jpg");
+    background: url("../../Assets/Images/McGrath-7.jpg");
     background-size: cover;
     background-position: 50%;
     border-radius: 5%;
@@ -266,7 +266,7 @@ body {
 .lodge-section-image {
     width: 50%;
     height: 1100px;
-    background: url("../Assets/Images/McGrath-18.jpg");
+    background: url("../../Assets/Images/McGrath-18.jpg");
     background-size: cover;
     background-position: 50%;
     border-radius: 5%;
