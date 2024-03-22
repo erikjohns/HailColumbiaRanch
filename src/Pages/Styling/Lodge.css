@@ -83,3 +83,93 @@
     line-height: 24px;
     margin-right: 40px;
 }
+
+
+
+
+
+/* Extra Small Devices - Phones */
+@media (max-width: 576px) {
+    .hero-image-photo img {
+        height: 130vh;
+    }
+
+    .hero-image-overlay {
+        height: 120vh;
+    }
+
+    .lodge-left-section {
+        margin-top: -270px;
+        flex-direction: column;
+        margin-bottom: 75px;
+    }
+
+    .lodge-left-section {
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .lodge-left-section h1 {
+        font-size: 90px;
+    }
+
+    .lodge-left-section h4 {
+        margin-top: -10px;
+        margin-left: 0;
+    }
+
+    .lodge-left-section p {
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+
+
+
+    .lodge-right-section {
+        flex-direction: column;
+        margin-bottom: 75px;
+    }
+
+    .lodge-right-section {
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .lodge-right-section h1 {
+        font-size: 90px;
+        margin-right: 0;
+    }
+
+    .lodge-right-section h4 {
+        margin-top: -10px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .lodge-right-section p {
+        margin-left: 0;
+        margin-bottom: 50px;
+        margin-right: 0;
+    }
+
+}
+
+/* Small Devices - Tablets */
+@media (min-width: 577px) and (max-width: 768px) {
+
+}
+
+/* Medium Devices - Laptops and Small Desktops */
+@media (min-width: 769px) and (max-width: 992px) {
+
+}
+
+/* Large Devices - Desktops */
+@media (min-width: 993px) and (max-width: 1200px) {
+
+}
+
+/* Extra Large Devices - Large Desktops */
+@media (min-width: 1201px) {
+
+}
