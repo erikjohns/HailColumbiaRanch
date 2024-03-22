@@ -2,6 +2,7 @@ import LodgeHeroImage from "../../Assets/Images/McGrath-17.jpg"
 import HeroSection from "../../Components/Hero";
 import ImageSlider from "../../Components/ImageSlider";
 import "../Styling/Lodge.css";
+import Images from "../../Assets/Images";
 
 function LodgePage () {
     return (
@@ -22,7 +23,7 @@ function LodgePage () {
                     and rejuvenation. The lodge boasts a spacious layout that effortlessly accommodates families, groups 
                     of friends, or corporate teams seeking a memorable escape.
                 </p>
-                <ImageSlider />
+                <ImageSlider images={Images.theHome}/>
             </div>
 
             <div className="lodge-right-section">
@@ -37,7 +38,7 @@ function LodgePage () {
                     three cozy fireplaces scattered throughout the house, perfect for cozy evenings spent sharing stories 
                     and creating memories.
                 </p>
-                <ImageSlider />
+                <ImageSlider images={Images.theBedrooms}/>
             </div>
 
             {/*

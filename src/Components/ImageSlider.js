@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
-import imageSRCs from "../Assets/Images";
 import "./ImageSlider.css";
 import { useEffect, useRef, useState } from "react";
 
-const ImageSlider = () => {
+const ImageSlider = ({ images }) => {
 
     const [width, setWidth] = useState(0);
     const carousel = useRef();
@@ -19,7 +18,7 @@ const ImageSlider = () => {
                     drag="x" 
                     dragConstraints={{ right: 0, left: -width }}
                     className="inner-carousel">
-                    {imageSRCs.map(image => {
+                    {images.map(image => {
                         return (
                             <motion.div className="carousel-item" key={image}>
                                 <img src={image} alt="gallery" />
