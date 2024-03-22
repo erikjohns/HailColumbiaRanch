@@ -1,0 +1,18 @@
+.rentals-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.rentals-page-container h1 {
+    color: #F2F2F0;
+    text-align: center;
+    font-family: 'OstrichSans-Black', sans-serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}

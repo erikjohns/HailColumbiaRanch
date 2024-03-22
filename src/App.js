@@ -4,7 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import VenuePage from './Pages/Javascript/Venue';
 import LodgePage from './Pages/Javascript/Lodge';
 import { AnimatePresence } from 'framer-motion';
-import ImageSlider from './Components/ImageSlider';
+import Gallery from './Pages/Javascript/Gallery';
+import Contact from './Pages/Javascript/Contact';
+import Rentals from './Pages/Javascript/Rentals';
+
 
 function App() {
 
@@ -16,7 +19,9 @@ function App() {
             <Route index element={<Homepage />} />
             <Route path="/venue" element={<VenuePage />} />
             <Route path="/lodge" element={<LodgePage />} />
-            <Route path="/images" element={<ImageSlider />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/rentals" element={<Rentals />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </AnimatePresence>
       </Router>
