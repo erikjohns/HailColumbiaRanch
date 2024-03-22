@@ -1,5 +1,7 @@
 import LodgeHeroImage from "../Assets/Images/McGrath-17.jpg"
 import HeroSection from "../Components/Hero";
+import ImageSlider from "../Components/ImageSlider";
+import "./Lodge.css";
 
 function LodgePage () {
     return (
@@ -10,6 +12,20 @@ function LodgePage () {
                 image={LodgeHeroImage}
             />
 
+            <div className="lodge-home-section">
+                <h1>The Home</h1>
+                <h4>Enjoy the Mountain's Majesty</h4>
+                <p>
+                    Welcome to our stunning lodge, conveniently situated just 5 miles north of Butte, nestled amidst 
+                    the breathtaking beauty of the mountains. This inviting 5-bedroom retreat offers an unparalleled 
+                    blend of modern comfort and rustic charm. Step inside and discover a sanctuary designed for relaxation 
+                    and rejuvenation. The lodge boasts a spacious layout that effortlessly accommodates families, groups 
+                    of friends, or corporate teams seeking a memorable escape.
+                </p>
+                <ImageSlider />
+            </div>
+
+            {/*
             <div className="venue-page-container">
                 <h1>The Lodge</h1>
                 <p>
@@ -17,9 +33,7 @@ function LodgePage () {
                     the breathtaking beauty of the mountains. This inviting 5-bedroom retreat offers an unparalleled 
                     blend of modern comfort and rustic charm.<br/>
 
-                    Step inside and discover a sanctuary designed for relaxation and rejuvenation. The lodge boasts a 
-                    spacious layout that effortlessly accommodates families, groups of friends, or corporate teams 
-                    seeking a memorable escape.<br/>
+                    <br/>
 
                     Each of the 5 bedrooms has been meticulously appointed to ensure a restful night's sleep for every 
                     guest. Sink into plush bedding and let the tranquility of the mountains lull you into a state of 
@@ -43,6 +57,7 @@ function LodgePage () {
                     with us today and embark on an unforgettable journey of relaxation, adventure, and connection.
                 </p>
             </div>
+    */}
         </div>
     )
 }
