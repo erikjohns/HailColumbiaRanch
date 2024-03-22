@@ -1,12 +1,12 @@
-.lodge-home-section {
+.lodge-left-section {
     z-index: 15;
     margin: 0 7%;
     position: relative;
     margin-top: -500px;
-    margin-bottom: 250px;
+    margin-bottom: 150px;
 }
 
-.lodge-home-section h1 {
+.lodge-left-section h1 {
     color: #F2F2F0;
     opacity: 0.2;
     font-family: "OstrichSans-Black", sans-serif;
@@ -17,7 +17,7 @@
     margin-bottom: 0;
 }
 
-.lodge-home-section h4 {
+.lodge-left-section h4 {
     color: #F2F2F0;
     font-family: "OstrichSans-Black", sans-serif;
     font-size: 64px;
@@ -29,7 +29,7 @@
     margin-bottom: 40px;
 }
 
-.lodge-home-section p {
+.lodge-left-section p {
     font-family: 'Montserrat', sans-serif;
     color: #F2F2F0;
     font-size: 18px;
@@ -37,4 +37,49 @@
     font-weight: 500;
     line-height: 24px;
     margin-left: 40px;
+}
+
+
+
+
+
+.lodge-right-section {
+    z-index: 15;
+    margin: 0 7%;
+    position: relative;
+    margin-bottom: 250px;
+    text-align: right;
+}
+
+.lodge-right-section h1 {
+    color: #F2F2F0;
+    opacity: 0.2;
+    font-family: "OstrichSans-Black", sans-serif;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 50px;
+    margin-bottom: 0;
+}
+
+.lodge-right-section h4 {
+    color: #F2F2F0;
+    font-family: "OstrichSans-Black", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 55px;
+    margin-right: 40px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.lodge-right-section p {
+    font-family: 'Montserrat', sans-serif;
+    color: #F2F2F0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-right: 40px;
 }
