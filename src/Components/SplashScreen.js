@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import "./SplashScreen.css";
 import { useEffect, useState } from "react";
-import Counter from "../Utilities/Counter";
+import HorseAnimation from "../Utilities/HorseAnimation";
 
 const SplashScreen = () => {
     const [isVisible, setIsVisible] = useState(true);
@@ -9,7 +9,7 @@ const SplashScreen = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsVisible(false);
-        }, 3000);
+        }, 4000);
 
         return () => clearTimeout(timer);
     }, []);
@@ -27,8 +27,9 @@ const SplashScreen = () => {
             animate={{ y: isVisible ? 0 : '-100vh' }}
             transition={{ duration: 0.5 }}
         >
+            {/*
             <motion.p>
-                <Counter inputNum="123.4" />&deg;
+                123.4&deg;
             </motion.p>
             <div>
                 {['H', 'C', 'R'].map((letter, index) => (
@@ -45,6 +46,10 @@ const SplashScreen = () => {
             <motion.p>
                 123.4&deg;
             </motion.p>
+                */}
+            <div className="splash-screen-horse">
+                <HorseAnimation/>
+            </div>
         </motion.div>
     )
 }
