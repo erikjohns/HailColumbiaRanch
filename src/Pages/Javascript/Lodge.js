@@ -1,6 +1,5 @@
 import LodgeHeroImage from "../../Assets/Images/McGrath-17.jpg"
 import HeroSection from "../../Components/Hero";
-import ImageSlider from "../../Components/ImageSlider";
 import "../Styling/Lodge.css";
 import Images from "../../Assets/Images";
 import Footer from "../../Components/Footer";
@@ -24,22 +23,23 @@ function LodgePage () {
                     and rejuvenation. The lodge boasts a spacious layout that effortlessly accommodates families, groups 
                     of friends, or corporate teams seeking a memorable escape.
                 </p>
-                <ImageSlider images={Images.theHome}/>
             </div>
 
-            <div className="lodge-right-section">
-                <h1>Bedrooms</h1>
-                <h4>Rest Easy in the Montana Air</h4>
-                <p>
-                    Each of the 5 bedrooms has been meticulously appointed to ensure a restful night's sleep for every 
-                    guest. Sink into plush bedding and let the tranquility of the mountains lull you into a state of 
-                    blissful repose.
-                    For those who enjoy staying active, our lodge features a fully equipped gym where you can maintain 
-                    your fitness routine amidst the stunning backdrop of nature. After a workout, unwind by one of the 
-                    three cozy fireplaces scattered throughout the house, perfect for cozy evenings spent sharing stories 
-                    and creating memories.
-                </p>
-                <ImageSlider images={Images.theBedrooms}/>
+            <div className="lodge-gallery-container">
+                <div className="image-full-width">
+                    <img src={Images.theHome[0]} alt="home page" />
+                </div>
+                <div className="image-half-width">
+                    <img src={Images.theHome[1]} alt="home" />
+                    <img src={Images.theHome[2]} alt="home" />
+                </div>
+                <div className="image-full-width">
+                    <img src={Images.theHome[3]} alt="home"/>
+                </div>
+                <div className="image-half-width">
+                    <img src={Images.theHome[4]} alt="home" />
+                    <img src={Images.theHome[5]} alt="home" />
+                </div>
             </div>
             <Footer />
         </div>

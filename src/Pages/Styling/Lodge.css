@@ -39,6 +39,53 @@
     margin-left: 40px;
 }
 
+.lodge-gallery-container {
+    width: 86%;
+    margin: 250px auto;
+    z-index: 999;
+}
+
+.image-full-width {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.image-full-width img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-half-width {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.image-half-width img {
+    width: 49.5%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
