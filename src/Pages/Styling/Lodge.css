@@ -41,7 +41,7 @@
 
 .lodge-gallery-container {
     width: 86%;
-    margin: 250px auto;
+    margin: 0 auto 250px auto;
     z-index: 999;
 }
 
@@ -71,6 +71,28 @@
     display: block;
 }
 
+.lodge-gallery-container button {
+    background: none;
+    border: 2px solid #F2F2F0;
+    color: #F2F2F0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 20px 40px;
+    border-radius: 16px;
+    margin: 30px auto;
+    text-align: center;
+    transition: 0.2s ease-in;
+    font-weight: 600;
+    display: block;
+    cursor: pointer;
+}
+
+.lodge-gallery-container button:hover {
+    border: 2px solid #F2F2F0;
+    background: #F2F2F0;
+    color: #28282B;
+}
+
 
 
 
@@ -94,7 +116,7 @@
     z-index: 15;
     margin: 0 7%;
     position: relative;
-    margin-bottom: 250px;
+    margin-bottom: 100px;
     text-align: right;
 }
 
