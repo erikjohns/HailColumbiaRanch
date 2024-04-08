@@ -11,8 +11,7 @@ const Contact = () => {
     const formatPhoneNumber = (input) => {
         // Implement your phone number formatting logic here
         // This is a simple example that adds dashes after every 3 digits
-        const formattedNumber = input.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
-        return formattedNumber;
+        return input.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
     };
 
     const handleChange = (event) => {
@@ -34,7 +33,7 @@ const Contact = () => {
                         back to
                         you ASAP! Please, feel free to be as detailed as possible; the more info, the better. <br/>
                         <br/>
-                        If simply trying to get ahold of us, please send an email to BLAH BLAH BLAH.
+                        If simply trying to get a hold of us, please send an email to BLAH BLAH BLAH.
                     </p>
                 </div>
 
@@ -53,7 +52,7 @@ const Contact = () => {
 
                     <div className={"field-holder"}>
                         <input id={"email"} type="email" required/>
-                        <label for={"email"}>Email</label>
+                        <label htmlFor={"email"}>Email</label>
                     </div>
 
                     <div className={"field-holder"}>
