@@ -173,3 +173,50 @@ input:valid {
     line-height: 24px;
     margin-left: 40px;
 }
+
+@media (max-width: 576px) {
+    .contact-page-container {
+        overflow: hidden;
+    }
+
+    .contact-page-container form {
+        width: 80vw;
+    }
+
+    .contact-page-heading {
+        width: 80vw;
+    }
+
+    .contact-page-heading h1 {
+        font-size: 60px;
+        line-height: 40px;
+    }
+
+    .contact-page-heading h4 {
+        margin-top: -10px;
+    }
+
+    .contact-page-heading p {
+        margin-left: 0;
+    }
+
+    .contact-form-two {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form-two .field-holder {
+        width: 100%;
+    }
+
+    .contact-page-container .submit {
+        background: #F2F2F0;
+        color: #28282b;
+        opacity: 1;
+    }
+
+    .contact-page-container .submit:hover {
+        color: #F2F2F0;
+        background: #28282b;
+    }
+}
