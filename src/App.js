@@ -8,6 +8,7 @@ import Gallery from './Pages/Javascript/Gallery';
 import Contact from './Pages/Javascript/Contact';
 import Rentals from './Pages/Javascript/Rentals';
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Router>
         <AnimatePresence mode="wait">
           <SpeedInsights />
+          <Analytics />
           <Routes>
             <Route index element={<Homepage />} />
             <Route path="/venue" element={<VenuePage />} />
