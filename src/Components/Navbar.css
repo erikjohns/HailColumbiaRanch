@@ -72,6 +72,11 @@
     transform-origin: bottom left;
 }
 
+.main-navbar-container img {
+    width: 100px;
+    height: 120px;
+}
+
 /* Extra Small Devices - Phones */
 @media (max-width: 992px) {
 

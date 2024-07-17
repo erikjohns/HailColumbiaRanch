@@ -18,7 +18,7 @@ const SplashScreen = () => {
         document.body.style.overflow = isVisible ? 'hidden' : 'unset';
     }, [isVisible]);
 
-    
+
 
     return (
         <motion.div

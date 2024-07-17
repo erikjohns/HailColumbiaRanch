@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
-
 const HeroSection = ({ title, subtitle, image }) => {
     const altText = `${title} Hero`
 

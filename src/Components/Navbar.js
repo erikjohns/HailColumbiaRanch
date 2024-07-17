@@ -1,6 +1,7 @@
 import './Navbar.css';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import HCRLogo from '../Assets/Images/HCRLogo.png'
 // import CloseIcon from '@mui/icons-material/Close';
 import { useState } from 'react';
 
@@ -45,7 +46,7 @@ export default function Navbar () {
                     <a href="/"><span className="main-navbar-hover-underline">Home</span></a>
                     <a href="/venue"><span className="main-navbar-hover-underline">Venue</span></a>
                     <a href="/lodge"><span className="main-navbar-hover-underline">Lodge</span></a>
-                    <a href="/" className="main-navbar-logo">HCR</a>
+                    <a href="/" className="main-navbar-logo"><img src={HCRLogo} alt={"hcr logo"} className={"main-navbar-logo-image"}/></a>
                     <a href="/gallery"><span className="main-navbar-hover-underline">Gallery</span></a>
                     <a href="/rentals"><span className="main-navbar-hover-underline">Rentals</span></a>
                     <a href="/contact"><span className="main-navbar-hover-underline">Contact</span></a>
