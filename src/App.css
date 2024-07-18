@@ -3,3 +3,49 @@
   src: local('OstrichSans-Black'), url('.') format('woff2');
   font-weight: normal;
 }
+
+.testimonials {
+  margin: 0 7%;
+  width: 86%;
+}
+
+.testimonial-wrap {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Two columns: auto for image, 1fr for text */
+  align-items: center;
+  gap: 20px; /* Space between image and text */
+  padding: 20px;
+  background-color: #333; /* Background color to see the elements clearly */
+  border-radius: 10px;
+  margin-bottom: 20px; /* Space between testimonial slides */
+}
+
+.testimonial-wrap img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.testimonial {
+  width: 60%;
+  background-color: blue;
+}
+
+.testimonials p {
+  font-family: 'Montserrat', sans-serif;
+  color: #F2F2F0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+
+.testimonials h6 {
+  color: #F2F2F0;
+  font-family: "OstrichSans-Black", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 900;
+  margin: 0;
+}
+

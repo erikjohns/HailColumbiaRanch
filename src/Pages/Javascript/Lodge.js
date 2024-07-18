@@ -4,7 +4,8 @@ import HeroSection from "../../Components/Hero";
 import "../Styling/Lodge.css";
 import Images from "../../Assets/Images";
 import Footer from "../../Components/Footer";
-import Modal from "../../Components/Modal"; // Import the modal component
+import Modal from "../../Components/Modal";
+import Testimonials from "../../Components/TestimonialCarousel"; // Import the modal component
 
 function LodgePage() {
     const [selectedImageIndex, setSelectedImageIndex] = useState(null);
@@ -37,6 +38,16 @@ function LodgePage() {
                 <h1>The Home</h1>
                 <h4>Enjoy the Mountain's Majesty</h4>
                 <p> /* Your text here */ </p>
+            </div>
+
+            <div className={"lodge-right-section"}>
+                <h1>The Reviews</h1>
+                <h4>Don't Take it From Us</h4>
+                <p>Don't just listen to what we have to say about the luxury lodging, take it from our previous guests!</p>
+            </div>
+
+            <div className={"lodge-review-sections"}>
+                <Testimonials />
             </div>
 
             <div className="lodge-right-section">
