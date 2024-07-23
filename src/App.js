@@ -27,7 +27,7 @@ function App() {
   const handleSplashFinish = () => {
     // Set localStorage item to remember the visit
     localStorage.setItem('hasVisited', 'true');
-    setShowSplash(true);
+    setShowSplash(false);
   };
 
   return (
