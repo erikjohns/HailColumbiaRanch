@@ -9,25 +9,47 @@ import Contact from './Pages/Javascript/Contact';
 import Rentals from './Pages/Javascript/Rentals';
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import { Analytics } from "@vercel/analytics/react"
+import {useEffect, useState} from "react";
+import SplashScreen from "./Components/SplashScreen";
 
 function App() {
 
+  const [showSplash, setShowSplash] = useState(true);
+
+  useEffect(() => {
+    // Check if the user has visited before
+    const hasVisitedBefore = localStorage.getItem('hasVisited');
+    if (hasVisitedBefore) {
+      setShowSplash(false);
+    }
+  }, []);
+
+  const handleSplashFinish = () => {
+    // Set localStorage item to remember the visit
+    localStorage.setItem('hasVisited', 'true');
+    setShowSplash(true);
+  };
+
   return (
     <div className="app">
-      <Router>
-        <AnimatePresence mode="wait">
-          <SpeedInsights />
-          <Analytics />
-          <Routes>
-            <Route index element={<Homepage />} />
-            <Route path="/venue" element={<VenuePage />} />
-            <Route path="/lodge" element={<LodgePage />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/rentals" element={<Rentals />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </AnimatePresence>
-      </Router>
+      {showSplash ? (
+          <SplashScreen onFinish={handleSplashFinish} />
+      ) : (
+        <Router>
+          <AnimatePresence mode="wait">
+            <SpeedInsights />
+            <Analytics />
+            <Routes>
+              <Route index element={<Homepage />} />
+              <Route path="/venue" element={<VenuePage />} />
+              <Route path="/lodge" element={<LodgePage />} />
+              <Route path="/gallery" element={<Gallery />} />
+              <Route path="/rentals" element={<Rentals />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </AnimatePresence>
+        </Router>
+      )}
     </div>
   );
 }

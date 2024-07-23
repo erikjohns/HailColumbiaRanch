@@ -1,56 +1,58 @@
+import React, {useEffect, useState} from 'react';
+import './SplashScreen.css';
+import Logo from '../Assets/Images/HCRLogo.svg';
 import { motion } from "framer-motion";
-import "./SplashScreen.css";
-import { useEffect, useState } from "react";
-import HorseAnimation from "../Utilities/HorseAnimation";
 
-const SplashScreen = () => {
-    const [isVisible, setIsVisible] = useState(true);
+const SplashScreen = ({ onFinish }) => {
+
+    const [fadeOut, setFadeOut] = useState(false);
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            setIsVisible(false);
-        }, 4000);
+            setFadeOut(true);
+            setTimeout(onFinish, 1000);
+        }, 6000);
 
         return () => clearTimeout(timer);
-    }, []);
-
-    useEffect(() => {
-        document.body.style.overflow = isVisible ? 'hidden' : 'unset';
-    }, [isVisible]);
-
+    }, [onFinish]);
 
 
     return (
-        <motion.div
-            className="splash-screen-container"
-            initial={{ y: 0 }}
-            animate={{ y: isVisible ? 0 : '-100vh' }}
-            transition={{ duration: 0.5 }}
-        >
-            {/*
-            <motion.p>
-                123.4&deg;
-            </motion.p>
-            <div>
-                {['H', 'C', 'R'].map((letter, index) => (
-                    <motion.h1
-                        key={index}
-                        initial={{ y: 0, opacity: 1 }}
-                        animate={{ y: -200, opacity: 0 }}
-                        transition={{ duration: 0.5, delay: 2.3 + index * 0.1 }}
-                    >
-                        {letter}
-                    </motion.h1>
-                ))}
+        <div className={`splash-screen ${fadeOut ? 'fade-out' : ''}`}>
+            <motion.div
+                initial={{ scale: 2, x: -250 }}
+                animate={{ scale: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 2}}
+                style={{ transformOrigin: 'center' }}
+                className={"splash-screen-image-wrapper"}
+            >
+                <motion.img
+                    src={Logo}
+                    className={'splash-screen__logo'}
+                    alt={'Logo'}
+                    initial={{x: 300 }}
+                    animate={{x: 0 }}
+                    transition={{duration: 0.5, delay: 3}}
+                    style={{transformOrigin: 'center'}}
+                />
+            </motion.div>
+            <div className={"splash-screen__heading"}>
+                <motion.h1
+                    initial={{x: -200, opacity: 0}}
+                    animate={{x: 0, opacity: 1}}
+                    transition={{duration: 0.5, delay: 3.5}}
+                >
+                HAIL COLUMBIA RANCH
+                </motion.h1>
+                <motion.h4
+                    initial={{ x: -200, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 4.5 }}
+                >
+                    Wedding & Event Center in Butte, Montana
+                </motion.h4>
             </div>
-            <motion.p>
-                123.4&deg;
-            </motion.p>
-                */}
-            <div className="splash-screen-horse">
-                <HorseAnimation/>
-            </div>
-        </motion.div>
+        </div>
     )
 }
 
