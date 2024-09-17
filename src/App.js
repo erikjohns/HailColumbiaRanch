@@ -11,10 +11,12 @@ import { SpeedInsights } from "@vercel/speed-insights/react"
 import { Analytics } from "@vercel/analytics/react"
 import {useEffect, useState} from "react";
 import SplashScreen from "./Components/SplashScreen";
+import ComingSoon from "./Pages/Javascript/ComingSoon";
 
 function App() {
 
-  const [showSplash, setShowSplash] = useState(true);
+  // TODO: Change back to true if wanting to display
+  const [showSplash, setShowSplash] = useState(false);
 
   useEffect(() => {
     // Check if the user has visited before
@@ -30,6 +32,7 @@ function App() {
     setShowSplash(false);
   };
 
+  // TODO: Adjust routes so that homepage is main page
   return (
     <div className="app">
       {showSplash ? (
@@ -40,7 +43,8 @@ function App() {
             <SpeedInsights />
             <Analytics />
             <Routes>
-              <Route index element={<Homepage />} />
+              <Route index element={<ComingSoon />} />
+              <Route path="/homepage" element={<Homepage />} />
               <Route path="/venue" element={<VenuePage />} />
               <Route path="/lodge" element={<LodgePage />} />
               <Route path="/gallery" element={<Gallery />} />

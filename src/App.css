@@ -85,7 +85,7 @@
   z-index: 99;
 }
 
-.splash-screen__heading h1 {
+.splash-screen__heading h1, .coming-soon h1 {
   color: #F2F2F0;
   text-align: center;
   font-family: 'OstrichSans-Black', sans-serif;
@@ -107,4 +107,24 @@
   line-height: normal;
   margin: 0;
   padding: 0;
+}
+
+.coming-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.coming-soon img {
+  margin: 0 -75px;
+}
+
+.coming-soon p {
+  font-family: 'Montserrat', sans-serif;
+  color: #F2F2F0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
 }
